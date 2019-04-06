@@ -6,11 +6,8 @@ setup(
     author=['Bruno Paes'],
     author_email=['brunopaes05@gmail.com'],
     packages=[''],
-    scripts=['src/propagation.py'],
+    scripts=['src/reader.py'],
     url=None,
     license=None,
     description='ANN Module',
-    long_description=open('../README.md').read(),
-    install_requires=[
-        "Pandas >= 0.24.2",
-    ])
+    long_description=open('README.md').read())
