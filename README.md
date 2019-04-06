@@ -34,7 +34,7 @@ or, if for some reason the installation fails, donwloads this repository and, in
 .
 └── treeshrews
     ├── docs
-    ├── src
+    ├── treeshrews
     │   ├── data
     │   └── __init__.py
     ├── tests
