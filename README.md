@@ -1,5 +1,5 @@
 ## TreeShrews - ANN Python modules
-----------------------------------
+
 Bachelor's final project.
 
 This project is optimised for python 3+
@@ -18,7 +18,7 @@ For developers, python requirements could be find in the project's root. For ins
 
 ### Installation
 
-For users, this module could be installed by `git`:
+For users, this module could be installed by `pip + git`:
 
 `pip install git+https://github.com/Brunopaes/treeshrews.git`
 
