@@ -10,7 +10,7 @@ setup(
     url=None,
     license=None,
     description='ANN Module',
-    long_description=open('README.txt').read(),
+    long_description=open('../README.md').read(),
     install_requires=[
         "Pandas >= 0.24.2",
     ])
