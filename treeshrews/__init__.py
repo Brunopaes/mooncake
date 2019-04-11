@@ -1,5 +1,5 @@
-from . import reader
+from . import ANNFitting
 
 __all__ = [
-    'reader.py'
+    'ANNFitting.py'
 ]
