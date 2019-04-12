@@ -10,7 +10,8 @@ This is an python's future-library for Artificial Neural Networks. This project 
 
 ### Dependencies
 
-For developers, python requirements could be find in the project's root. For installing the requirements, in your ___venv___ or ___anaconda env___, just run the following command:
+For developers, python requirements could be find in the project's root. For installing the requirements, 
+in your ___venv___ or ___anaconda env___, just run the following command:
 
 `pip install -r requirements.txt`
 
@@ -22,7 +23,7 @@ For users, this module could be installed by `pip + git`:
 
 `pip install git+https://github.com/Brunopaes/treeshrews.git`
 
-or, if for some reason the installation fails, donwloads this repository and, inside the project's root, run the following command:
+or, if for some reason the installation fails, downloads this repository and, inside the project's root, run the following command:
 
 `python setup.py install`
 
@@ -34,9 +35,13 @@ or, if for some reason the installation fails, donwloads this repository and, in
 .
 └── treeshrews
     ├── docs
+    │   ├── final_article.pdf
+    │   ├── reference_articles
+    │   ├── ...
+    │   └── iris.csv
     ├── treeshrews
-    │   ├── data
-    │   └── __init__.py
+    │   ├── __init__.py
+    │   └── ANNFitting.py
     ├── tests
     │   └── unittests
     │       ├── data
