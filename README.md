@@ -1,4 +1,4 @@
-## TreeShrews - ANN Python modules
+## Miek - ANN Python modules
 
 Bachelor's final project.
 
@@ -33,13 +33,13 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 ```bash 
 .
-└── treeshrews
+└── miek
     ├── docs
     │   ├── final_article.pdf
     │   ├── reference_articles
     │   ├── ...
     │   └── iris.csv
-    ├── treeshrews
+    ├── miek
     │   ├── __init__.py
     │   └── ANNFitting.py
     ├── tests
