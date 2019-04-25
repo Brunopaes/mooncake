@@ -61,6 +61,6 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 - __Benchmark's article:__ [Expertise areas](http://www2.espm.br/sites/default/files/pagina/artigo_7o_semic_reformulado_bruno_henrique_paes_8-10-18.pdf)
 
-- __Project's name inspiration:__ [Tree-Shrews](https://www.theawl.com/2014/10/interpreting-the-animal-choices-on-the-worlds-most-popular-programming-books/);
+- __Old Project's name inspiration:__ [Tree-Shrews](https://www.theawl.com/2014/10/interpreting-the-animal-choices-on-the-worlds-most-popular-programming-books/);
 
 --------------
