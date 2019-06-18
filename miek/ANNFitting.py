@@ -176,7 +176,7 @@ class ANNFitting:
         return synaptic_list
 
     # Used in __call__
-    def randomizing_synaptic_weights(self, synaptic_list):
+    def randomising_synaptic_weights(self, synaptic_list):
         """This function, by randomizing it, generates all the synaptic weights.
 
         Parameters
