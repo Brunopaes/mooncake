@@ -9,50 +9,90 @@ class ANNFitting:
     the global difference between the output and the desired output.
 
     Focused on:
-        Optimization Method: SGD (Stochastic Gradient Descent).
+        Optimisation Method: SGD (Stochastic Gradient Descent).
         - Propagation and Backpropagation algorithms.
 
     """
-    def __init__(self, data, labels, activation_function='sigmoide', hidden_layers=1, neurons=3):
+    def __init__(self, data, labels, activation_function='sigmoid', hidden_layers=1, neurons=3):
+        """This function initialises the class variables.
+
+        Parameters
+        ----------
+        data : pandas.core.frame.DataFrame
+            Training set.
+        labels : pandas.core.frame.DataFrame
+            Training labels.
+        activation_function : str, optional
+            Correspondent activation function.
+        hidden_layers : int, optional (default=1)
+            Number of desired hidden layers.
+        neurons : int, optional (default=3)
+            Number of desired neurons.
+
+        """
         self.data = data
         self.labels = labels
 
-        self.functions = {
-            'sigmoide': ['', ''],
-            'relu': ['', ''],
-            'tanh': ['', '']
-        }
-
-        self.activation_function = self.getting_activation(activation_function)
-
         self.input_layer_len = self.defining_input_layer()
         self.output_layer_len = self.defining_output_layer()
-        self.hidden_layers = [[]] * hidden_layers
-        self.neurons = [[]] * neurons
+        self.hidden_layers = [[] for idx in range(hidden_layers)]
 
-        self.synaptic_weights = (hidden_layers + 1) * [[]]
+        self.neurons = [[] for idx in range(neurons)]
+
+        self.synaptic_weights = [[] for idx in range(hidden_layers + 1)]
+
+        self.activation_function = activation_function
 
         self.lengths = [
             self.input_layer_len,
             self.output_layer_len
         ]
 
-    # Used in __init__
-    def getting_activation(self, function):
-        """This function returns the chosen activation function and it
-        respectively derivative.
+    # Used in __call__
+    def activation(self, x):
+        """This function returns the chosen activation function.
 
         Parameters
         ----------
-        function : str
-            The activation function's name.
+        x : float
+            To be activated value.
         Returns
         -------
-        self.functions.get(function) : list
-            List with the activation function and it respectively derivative.
+        activation_dict.get() : float
+            Activated value.
 
         """
-        return self.functions.get(function)
+        activation_dict = {
+            'sigmoid': 1.0/1.0 + math.exp(-x),
+            'tanh': math.tanh(x),
+            'relu': max(0.0, x)
+        }
+
+        return activation_dict.get(self.activation_function,
+                                   activation_dict['sigmoid'])
+
+    # Used in __call__
+    def gradient(self, x):
+        """This function returns the chosen derivative.
+
+        Parameters
+        ----------
+        x : float
+            To be derivated value.
+        Returns
+        -------
+        derivative_dict : float
+            Result's derivative from the activation function.
+
+        """
+        derivative_dict = {
+            'sigmoid': x * (1.0 - x),
+            'tanh': 1.0 - math.sqrt(x),
+            'relu': 1.0 * (x > 0.0),
+        }
+
+        return derivative_dict.get(self.activation_function,
+                                   derivative_dict['sigmoid'])
 
     # Used in __init__
     def defining_input_layer(self):
@@ -82,11 +122,6 @@ class ANNFitting:
     def defining_hidden_layers(self):
         """This function defines the array structure of the hidden layers.
 
-        Returns
-        -------
-        none : None
-            This function has no return.
-
         """
         for i in range(len(self.hidden_layers)):
             self.hidden_layers[i] = self.neurons
@@ -99,11 +134,6 @@ class ANNFitting:
         ----------
         list_len : lst
             List with all the hidden layers length.
-
-        Returns
-        -------
-        none : None
-            This function has no return.
 
         """
         for idx in range(len(list_len)):
@@ -154,14 +184,10 @@ class ANNFitting:
         synaptic_list : list
             List with all the synaptic weights lengths.
 
-        Returns
-        -------
-        none : None
-            This function has no return.
-
         """
         for idx, layer in enumerate(synaptic_list):
-            self.synaptic_weights[idx].append(random.random())
+            for elem in range(layer):
+                self.synaptic_weights[idx].append(random.random())
 
     def __call__(self, *args, **kwargs):
         self.defining_hidden_layers()
@@ -172,7 +198,7 @@ class ANNFitting:
 
         self.randomizing_synaptic_weights(self.generating_synaptic_weights())
 
-        pass
+        self.activation(-0.4243)
 
 
 if __name__ == '__main__':

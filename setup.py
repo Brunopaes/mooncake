@@ -8,6 +8,6 @@ setup(
     packages='miek',
     scripts='miek/__init__.py',
     url='https://github.com/Brunopaes/Miek',
-    license='None',
+    license='MIT',
     description='An ANN Module for multiple scenarios.',
     long_description=open('README.md').read())

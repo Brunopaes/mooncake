@@ -46,6 +46,8 @@ or, if for some reason the installation fails, downloads this repository and, in
     │   └── unittests
     │       ├── data
     │       └── __init__.py
+    ├── .gitignore
+    ├── LICENSE
     ├── README.md
     ├── requirements.txt
     └── setup.py
