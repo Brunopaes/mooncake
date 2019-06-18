@@ -196,7 +196,7 @@ class ANNFitting:
 
         self.defining_hidden_layers_len(synaptic_weights_list)
 
-        self.randomizing_synaptic_weights(self.generating_synaptic_weights())
+        self.randomising_synaptic_weights(self.generating_synaptic_weights())
 
         self.activation(-0.4243)
 
