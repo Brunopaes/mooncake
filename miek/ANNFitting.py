@@ -13,7 +13,8 @@ class ANNFitting:
         - Propagation and Backpropagation algorithms.
 
     """
-    def __init__(self, data, labels, activation_function='sigmoid', hidden_layers=1, neurons=3):
+    def __init__(self, data, labels, activation_function='sigmoid',
+                 hidden_layers=1, neurons=3):
         """This function initialises the class variables.
 
         Parameters
@@ -171,13 +172,15 @@ class ANNFitting:
             if index == list_len:
                 pass
             else:
-                synaptic_list.append(elem * self.lengths[self.lengths.index(elem) + 1])
+                synaptic_list.append(elem * self.lengths[
+                    self.lengths.index(elem) + 1])
 
         return synaptic_list
 
     # Used in __call__
     def randomising_synaptic_weights(self, synaptic_list):
-        """This function, by randomizing it, generates all the synaptic weights.
+        """This function, by randomising it, generates all the synaptic
+        weights.
 
         Parameters
         ----------
@@ -209,7 +212,7 @@ if __name__ == '__main__':
     train = df.iloc[:, 0: -1]
     test = df.iloc[:, -1]
 
-    obj = ANNFitting(data=train, labels=test)
+    obj = ANNFitting(data=train, labels=test, neurons=2)
     obj()
 
     """

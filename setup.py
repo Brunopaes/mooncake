@@ -10,4 +10,5 @@ setup(
     url='https://github.com/Brunopaes/Miek',
     license='MIT',
     description='An ANN Module for multiple scenarios.',
-    long_description=open('README.md').read())
+    long_description=open('README.md').read()
+)
