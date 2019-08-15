@@ -35,18 +35,19 @@ or, if for some reason the installation fails, downloads this repository and, in
 .
 └── mooncake
     ├── docs
-    │   ├── final_article.pdf
+    │   ├── settings.json
     │   ├── ...
-    │   └── iris.csv
+    │   └── METADATA
     ├── mooncake
     │   ├── __init__.py
+    │   ├── ...
     │   └── ANNFitting.py
     ├── tests
     │   ├── test_data
     │   └── unittests
-    │       ├── test_ann_fitting.py
+    │       ├── __init__.py
     │       ├── ...
-    │       └── __init__.py
+    │       └── test_ann_fitting.py
     ├── .gitignore
     ├── LICENSE
     ├── README.md
