@@ -37,9 +37,7 @@ or, if for some reason the installation fails, downloads this repository and, in
     ├── docs
     │   ├── final_article.pdf
     │   ├── ...
-    │   ├── iris.csv
-    │   └── reference_articles
-    │       └── reference_articles
+    │   └── iris.csv
     ├── mooncake
     │   ├── __init__.py
     │   └── ANNFitting.py
