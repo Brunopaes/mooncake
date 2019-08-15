@@ -14,7 +14,7 @@ class ANNFitting:
 
     """
     def __init__(self, data, labels, activation_function='sigmoid',
-                 hidden_layers=1, neurons=3):
+                 hidden_layers=2, neurons=3):
         """This function initialises the class variables.
 
         Parameters
@@ -192,6 +192,10 @@ class ANNFitting:
             for elem in range(layer):
                 self.synaptic_weights[idx].append(random.random())
 
+    # Used in __call__
+    def ponderation(self, input_, weights):
+        pass
+
     def __call__(self, *args, **kwargs):
         self.defining_hidden_layers()
 
@@ -203,6 +207,8 @@ class ANNFitting:
 
         self.activation(-0.4243)
 
+        self.ponderation([5.1, 3.5, 1.4, 0.2], self.synaptic_weights[0])
+
 
 if __name__ == '__main__':
     import pandas
@@ -212,13 +218,11 @@ if __name__ == '__main__':
     train = df.iloc[:, 0: -1]
     test = df.iloc[:, -1]
 
-    obj = ANNFitting(data=train, labels=test, neurons=2)
+    obj = ANNFitting(data=train, labels=test)
     obj()
 
-    """
-    def test_(row):
-        print(row)
-
-    train.apply(lambda row: test_(row), axis=1)
-    test.apply(lambda row: test_(row))
-    """
+    # def test_(row):
+    #     print(row)
+    #
+    # train.apply(lambda row: test_(row), axis=1)
+    # test.apply(lambda row: test_(row))
