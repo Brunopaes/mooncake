@@ -1,4 +1,4 @@
-## Miek - ANN Python modules
+## Mooncake - ANN Python modules
 
 Bachelor's final project.
 
@@ -33,18 +33,21 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 ```bash 
 .
-└── miek
+└── mooncake
     ├── docs
     │   ├── final_article.pdf
-    │   ├── reference_articles
     │   ├── ...
-    │   └── iris.csv
-    ├── miek
+    │   ├── iris.csv
+    │   └── reference_articles
+    │       └── reference_articles
+    ├── mooncake
     │   ├── __init__.py
     │   └── ANNFitting.py
     ├── tests
+    │   ├── test_data
     │   └── unittests
-    │       ├── data
+    │       ├── test_ann_fitting.py
+    │       ├── ...
     │       └── __init__.py
     ├── .gitignore
     ├── LICENSE
