@@ -1,5 +1,9 @@
-from . import ANNFitting
-
 __all__ = [
-    'ANNFitting.py'
+    'ANNFitting',
+    'helpers',
+    'nominal',
+    'models',
+    'ros',
 ]
+
+from . import __all__
