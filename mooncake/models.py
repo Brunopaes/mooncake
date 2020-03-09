@@ -17,7 +17,7 @@ class TreeDecision:
 
 class RandomForest:
     def __init__(self, x, y):
-        self.r_forest = RandomForestClassifier()
+        self.r_forest = RandomForestClassifier(n_estimators=110, criterion='entropy')
         self.x = x
         self.y = y
 
