@@ -10,26 +10,33 @@
     - Poucas elementos amostrais
     - Preditores com Falsos Negativos
 
-2. Revisão de Literatura
-    - ROS & RUS (Random Oversampling & Random Undersampling)
-    - SMOTE
-    - GANs
-    - Base de Dados:
-        - Análise Estatística
-        - PCA
-        - Normalização
+2. Revisão Literária
+    - Definição de Fraude
+        - Técnicas Antifraude
+    - Aprendizado de Máquina
+        - Tree Classifiers
+        - Random Forests Classifiers
+        - Percepton
+        - MultiLayer Percepton
+        - Support Vector Machines
+    - Sampling
+        - Random Undersampling
+        - Random Oversampling
+        - SMOTE
 
 3. Metodologia
-    - Problemas com Overfitting:
-        - Falsos Negativos (Fraudes classificadas como não fraudes)
-    - Solução 1: SMOTE (ROS/RUS)
-    - Solução 2: GAN
+    - Base de Dados
+        - Breve descritivo & aquisição de dados
+        - Análise Exploratória
+    - Redução de Dimensionalidade
+    - Resultados Preliminares
+        - Overfitting e Falsos Negativos
+    - Resultados Otimizados
+        - Otimização dos modelos
 
-4. Comparação de Resultados:
-    - SMOTE;
-    - GAN;
+4. Conclusão
+- Propostas Futuras
 
-5. Conclusão
 ------------------------------
 
 ## Model Evaluation
