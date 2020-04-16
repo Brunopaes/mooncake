@@ -5,8 +5,9 @@ Bachelor's final project.
 This project is optimised for python 3+
 
 This Data Science-like project is aimed on analyzing a bunch of techniques for 
-False Negatives in a extreme imbalanced dataset - Financial Fraud and improving 
-the predictors performance.
+False Negatives (Frauds classified as Non-Frauds) in a extreme imbalanced 
+dataset - Financial Fraud and improving the predictors performance.
+
 ----------------------------------
 
 ## Dependencies
