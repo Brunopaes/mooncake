@@ -1,14 +1,15 @@
-## Mooncake - ANN Python modules
+# Mooncake: Improving predictors for fraudulent transactions
 
 Bachelor's final project.
 
 This project is optimised for python 3+
 
-This is an python's future-library for Artificial Neural Networks. This project is aimed on the development and maintenance of an ANN for classification problems. In the final article a classification scenario will be choosen and a benchmark with Keras/Tensorflow will be made.
-
+This Data Science-like project is aimed on analyzing a bunch of techniques for 
+False Negatives in a extreme imbalanced dataset - Financial Fraud and improving 
+the predictors performance.
 ----------------------------------
 
-### Dependencies
+## Dependencies
 
 For developers, python requirements could be find in the project's root. For installing the requirements, 
 in your ___venv___ or ___anaconda env___, just run the following command:
@@ -17,7 +18,7 @@ in your ___venv___ or ___anaconda env___, just run the following command:
 
 ----------------
 
-### Installation
+## Installation
 
 For users, this module could be installed by `pip + git`:
 
@@ -29,7 +30,7 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 ----------------
 
-### Project's Structure
+## Project's Structure
 
 ```bash 
 .
@@ -57,7 +58,7 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 -----------------------
 
-### References
+## References
 
 - __Activation Functions:__ [link](https://en.wikipedia.org/wiki/Activation_function);
 

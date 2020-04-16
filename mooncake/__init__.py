@@ -1,7 +1,5 @@
 __all__ = [
-    'ANNFitting',
     'helpers',
-    'nominal',
     'models',
     'ros',
 ]
