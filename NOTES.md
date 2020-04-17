@@ -20,8 +20,7 @@
         - MultiLayer Percepton
         - Support Vector Machines
     - Sampling
-        - Random Undersampling
-        - Random Oversampling
+        - Random Sampling
         - SMOTE
 
 3. Metodologia
