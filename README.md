@@ -12,22 +12,11 @@ dataset - Financial Fraud and improving the predictors performance.
 
 ## Dependencies
 
-For developers, python requirements could be find in the project's root. For installing the requirements, 
+For developers, python requirements could be find in the project's root. 
+For installing the requirements, 
 in your ___venv___ or ___anaconda env___, just run the following command:
 
 `pip install -r requirements.txt`
-
-----------------
-
-## Installation
-
-For users, this module could be installed by `pip + git`:
-
-`pip install git+https://github.com/Brunopaes/treeshrews.git`
-
-or, if for some reason the installation fails, downloads this repository and, inside the project's root, run the following command:
-
-`python setup.py install`
 
 ----------------
 
@@ -36,20 +25,36 @@ or, if for some reason the installation fails, downloads this repository and, in
 ```bash 
 .
 └── mooncake
+    ├── data
+    │   ├── entropy
+    │   │   ├── tree_entropy_2020-03-04.png
+    │   │   └── tree_entropy_2020-03-05.png
+    │   ├── datasource.csv
+    │   ├── validation-2020-02-27.csv
+    │   └── validation-2020-03-24.csv
     ├── docs
-    │   ├── settings.json
-    │   ├── ...
-    │   └── METADATA
+    │   ├── confusion-matrix.xlsx
+    │   ├── Ficha.pdf
+    │   ├── PGT 04.17.docx
+    │   ├── PGT 05.11.docx
+    │   ├── PGT 05.23.docx
+    │   ├── PGT 05.26.docx
+    │   ├── PGT 05.28.docx
+    │   ├── PGT 05.29.docx
+    │   └── PGT 05.29.pdf
     ├── mooncake
     │   ├── __init__.py
-    │   ├── ...
-    │   └── ANNFitting.py
+    │   ├── helpers.py
+    │   ├── models.py
+    │   ├── plotting.ipynb
+    │   ├── ros.py
+    │   ├── smote.ipynb
+    │   └── smote.py
     ├── tests
-    │   ├── test_data
     │   └── unittests
     │       ├── __init__.py
     │       ├── ...
-    │       └── test_ann_fitting.py
+    │       └── test_helpers.py
     ├── .gitignore
     ├── LICENSE
     ├── README.md
@@ -65,7 +70,7 @@ or, if for some reason the installation fails, downloads this repository and, in
 
 - __ANN in java:__ [Sorting_Hat](https://github.com/Brunopaes/Sorting_Hat)
 
-- __Benchmark's article:__ [Expertise areas](http://www2.espm.br/sites/default/files/pagina/artigo_7o_semic_reformulado_bruno_henrique_paes_8-10-18.pdf)
+- __Benchmark's article:__ [Expertise areas](http://bibliotecas.espm.br:8080/pergamumweb/vinculos/0000aa/0000aa9d.pdf)
 
 - __Old Project's name inspiration:__ [Tree-Shrews](https://www.theawl.com/2014/10/interpreting-the-animal-choices-on-the-worlds-most-popular-programming-books/);
 
