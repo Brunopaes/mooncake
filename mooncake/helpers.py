@@ -114,5 +114,3 @@ def x_and_y_separation(df):
 
     """
     return df[df.columns[0:-1]], df[df.columns[-1]]
-
-print('')
