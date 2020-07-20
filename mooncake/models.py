@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 
