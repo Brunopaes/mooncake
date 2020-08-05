@@ -1,5 +1,10 @@
 # Mooncake: Improving predictors for fraudulent transactions
 
+![GitHub language count](https://img.shields.io/github/languages/count/Brunopaes/mooncake.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/Brunopaes/mooncake.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/Brunopaes/mooncake.svg)
+![GitHub](https://img.shields.io/github/license/Brunopaes/mooncake.svg)
+
 Bachelor's final project.
 
 This project is optimised for python 3+
